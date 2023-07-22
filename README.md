@@ -1,7 +1,7 @@
 ## Portfolio-Website
 Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
 
-<a href="https://lifecodess.cf" target="_blank">**Visit Now** 🚀</a>
+<a href="https://portfoliodevom.netlify.app/" target="_blank">**Visit Now** 🚀</a>
 
 
 ## 📌 Tech Stack
@@ -14,17 +14,17 @@ Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
 Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawkto, Font Awesome and JSON
 
 ## 📌 Sneak Peek of Main Page 🙈 :
-![mockup720](https://user-images.githubusercontent.com/64949957/124947013-1f682080-e02d-11eb-977e-df3bbd4fa838.png)
-![skillsmockup](https://user-images.githubusercontent.com/64949957/124948653-82a68280-e02e-11eb-80d7-315ebc08ad36.PNG)
+<img width="958" alt="image" src="https://github.com/pattjoshi/Portfolio_Dev/assets/78966839/6bafa46e-4d4d-414e-896c-5d59369d1e5c">
+<img width="960" alt="image" src="https://github.com/pattjoshi/Portfolio_Dev/assets/78966839/045f002c-9cf0-4d90-b699-182d7a1192e6">
+
 
 
 <h2>📬 Contact</h2>
 
 If you want to contact me, you can reach me through below handles.
 
-&nbsp;&nbsp;<a href="https://www.linkedin.com/in/jigar-sable/"><img src="https://www.felberpr.com/wp-content/uploads/linkedin-logo.png" width="30"></img></a>
+&nbsp;&nbsp;<a href="https://www.linkedin.com/in/om-prakash-pattjoshi-/"><img src="https://www.felberpr.com/wp-content/uploads/linkedin-logo.png" width="30"></img></a>
 
-© 2021 Jigar Sable
+© 2023 om pattjoshi
 
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
