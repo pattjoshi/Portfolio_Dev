@@ -5,43 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="om  lifecodess,portfolio,lifecodes,Om pattjoshi , lifecodess,personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description"
-        content="Welcome to Om prakash Portfolio. Passionate  Developer. Freelancer Web Designer ." />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Om Prakash Pattjoshi, MERN Stack Developer, Full Stack Developer, React Developer, Node.js Developer, MongoDB, Express.js, Portfolio Website, Web Developer, JavaScript Developer, Frontend Developer, Backend Developer, Odisha Developer" />
+    <meta name="description" content="Om Prakash Pattjoshi - Passionate MERN Stack Developer specializing in React, Node.js, MongoDB, and Express.js. Computer Science Engineering student creating innovative web applications and software solutions." />
+    <meta name="author" content="Om Prakash Pattjoshi" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Om Prakash Pattjoshi - MERN Stack Developer Portfolio" />
+    <meta property="og:description" content="Passionate MERN Stack Developer creating innovative web applications. Explore my projects and skills in React, Node.js, MongoDB, and more." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta property="og:image" content="./assests/images/hero.png" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Om Prakash Pattjoshi - MERN Stack Developer" />
+    <meta name="twitter:description" content="Passionate MERN Stack Developer creating innovative web applications." />
+    <meta name="twitter:image" content="./assests/images/hero.png" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2506ad" />
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./assests/css/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" as="style">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assests/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    
+    <!-- Font Awesome - Updated to latest version -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assests/images/favicon.png" type="image/x-png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assests/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assests/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assests/images/favicon.png">
+    
     <!-- Devicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <title>Portfolio | Om Prakash </title>
+    
+    <title>Om Prakash Pattjoshi | MERN Stack Developer Portfolio</title>
 </head>
 <!-- <body oncontextmenu="return false" > -->
 
 <!-- pre loader -->
-<div class="loader-container">
-    <img draggable="false" src="./assests/images/preloader.gif" alt="">
+<div class="loader-container" role="presentation" aria-label="Loading">
+    <img draggable="false" src="./assests/images/preloader.gif" alt="Loading animation" loading="eager">
 </div>
 
 <!-- navbar starts -->
-<header>
-    <a href="#home" class="logo"> 🕉 Prakash </a>
+<header role="banner">
+    <a href="#home" class="logo" aria-label="Home - Om Prakash Portfolio"> 🕉 Prakash </a>
 
-    <div id="menu" class="fas fa-bars"></div>
-    <nav class="navbar">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <!-- <li><a href="#experience">Experience</a></li> -->
-            <li><a href="#contact">Contact</a></li>
+    <button id="menu" class="fas fa-bars" aria-label="Toggle navigation menu" aria-expanded="false"></button>
+    <nav class="navbar" role="navigation">
+        <ul role="menubar">
+            <li role="none"><a class="active" href="#home" role="menuitem" aria-current="page">Home</a></li>
+            <li role="none"><a href="#about" role="menuitem">About</a></li>
+            <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+            <li role="none"><a href="#education" role="menuitem">Education</a></li>
+            <li role="none"><a href="#work" role="menuitem">Projects</a></li>
+            <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+            <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -53,27 +81,22 @@
     <div id="particles-js"></div>
 
     <div class="content">
-        <h3>Hi There,<br /> I'm Om <span>Pattjoshi</span></h3>
-        <p>i am <span class="typing-text"></span></p>
-        <a href="#about" class="btn"><span>About Me</span>
-            <i class="fas fa-arrow-circle-down"></i>
+        <h1>Hi There,<br /> I'm Om <span>Pattjoshi</span></h1>
+        <p>I am <span class="typing-text"></span></p>
+        <a href="#about" class="btn" aria-label="Learn more about me"><span>About Me</span>
+            <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>
         </a>
         <div class="socials">
             <ul class="social-icons">
-                <li><a class="linkedin" href="https://www.linkedin.com/in/om-prakash-pattjoshi-/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a></li>
-                <li><a class="github" href="https://github.com/pattjoshi" target="_blank"><i
-                            class="fab fa-github"></i></a></li>
-                <li><a class="twitter" href="https://twitter.com/Omprakshp3/" target="_blank"><i
-                            class="fab fa-twitter"></i></a></li>
-                <li><a class="instagram" href="https://www.instagram.com/om_pattjoshi/"><i class="fab fa-instagram"
-                            target="_blank"></i></a></li>
-
+                <li><a class="linkedin" href="https://www.linkedin.com/in/om-prakash-pattjoshi-/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a class="github" href="https://github.com/pattjoshi" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/Omprakshp3/" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/om_pattjoshi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </div>
     <div class="image">
-        <img draggable="false" class="tilt" src="./assests/images/hero.png" alt="">
+        <img draggable="false" class="tilt" src="./assests/images/hero.png" alt="Om Prakash Pattjoshi - MERN Stack Developer" loading="lazy">
     </div>
 </section>
 <!-- hero section ends -->
@@ -89,30 +112,24 @@
             <img draggable="false" class="tilt" src="./assests/images/profile.jpg" alt="">
         </div>
         <div class="content">
-            <h3>I'm Om</h3>
-            <span class="tag">Passionate Web Developer</span>
-            <p>currently in my 4th year of B.Tech , specializing in Computer Science Engineering (CSE). I'm passionate about
-                coding and enjoy developing applications and software. I have experience in web development and love
-                working with core JavaScript and MongoDB. I'm eager to improve my skills and create impactful
-                solutions.
-            </p>
+            <h2>I'm Om Prakash Pattjoshi</h2>
+            <span class="tag">Passionate MERN Stack Developer</span>
+            <p>I am a B.Tech graduate in Computer Science Engineering with 2+ years of professional experience as a Full Stack Developer. I specialize in building scalable and high-performance web applications using modern technologies like Next.js, React.js, Node.js, and Express.js. I have strong expertise in full-stack development, REST APIs, microservices architecture, and PostgreSQL, along with experience in test automation and CI/CD practices. Passionate about coding and continuous learning, I enjoy developing innovative, user-focused digital solutions that enhance performance, improve accessibility, and solve real-world problems.</p>
             
             <div class="box-container">
-               
                 <div class="box">
-                    <p><span> phone : </span> +91 907-844-5836</p>
-                    <p><span> email : </span> omprakashpattjoshi123@gmail.com</p>
-                    <p><span> place : </span> Odisha, India-766015</p>
+                    <p><span>Phone:</span> <a href="tel:+919078445836">+91 907-844-5836</a></p>
+                    <p><span>Email:</span> <a href="mailto:omprakashpattjoshi123@gmail.com">omprakashpattjoshi123@gmail.com</a></p>
+                    <p><span>Location:</span> Odisha, India - 766015</p>
                 </div>
             </div>
 
-            <div class="resumebtn" title="👨‍💻 Check out my Resume">
-                <a href="https://drive.google.com/file/d/1zt7zaZ5ezqyuURyNfZyvpNiuEUfplDuC/view?usp=sharing"
-                    target="_blank" class="btn"><span>Resume</span>
-                    <i class="fas fa-chevron-right"></i>
+            <div class="resumebtn">
+                <a href="https://drive.google.com/file/d/1XiXqYLzo7mRGco8KFt2tJ_1Gg3lYpupW/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer" class="btn" aria-label="View Resume (opens in new tab)"><span>View Resume</span>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
                 </a>
             </div>
-
         </div>
     </div>
 </section>
@@ -125,77 +142,91 @@
 
     <div class="container" id="container">
 
-        <div title="HTML 5" class="visible">
-            <i class="devicon-html5-plain colored fa-10x"></i>
-
+        <div class="skill-item visible" title="HTML5">
+            <i class="devicon-html5-plain colored fa-10x" aria-label="HTML5"></i>
+            <span class="skill-name">HTML5</span>
         </div>
 
-        <div title="CSS 3" class="visible">
-
-            <i class="devicon-css3-plain colored  fa-10x"></i>
+        <div class="skill-item visible" title="CSS3">
+            <i class="devicon-css3-plain colored fa-10x" aria-label="CSS3"></i>
+            <span class="skill-name">CSS3</span>
         </div>
 
-        <div title="BootStrap 5" class="visible">
-            <i class="devicon-bootstrap-plain fa-10x"></i>
+        <div class="skill-item visible" title="Bootstrap">
+            <i class="devicon-bootstrap-plain fa-10x" aria-label="Bootstrap"></i>
+            <span class="skill-name">Bootstrap</span>
         </div>
 
-        <div title="tailwindcss" class="visible" id="tailwindcss">
-
-            <i class="devicon-tailwindcss-plain  fa-10x"></i>
-
+        <div class="skill-item visible" title="Tailwind CSS">
+            <i class="devicon-tailwindcss-plain fa-10x" aria-label="Tailwind CSS"></i>
+            <span class="skill-name">Tailwind CSS</span>
         </div>
 
-        <div title="JAVA" class="visible">
-            <i class="fab fa-java fa-10x"></i>
+        <div class="skill-item visible" title="JavaScript ES6+">
+            <i class="fab fa-js fa-10x" aria-label="JavaScript"></i>
+            <span class="skill-name">JavaScript</span>
         </div>
 
-        <div title="FIGMA" class="visible">
-            <i class="fab fa-figma fa-10x"></i>
+         
+
+        <div class="skill-item visible" title="React.js">
+            <i class="fab fa-react fa-10x" aria-label="React.js"></i>
+            <span class="skill-name">React.js</span>
         </div>
 
-          
-
-        <div title="javaScript ES-6" class="visible">
-            <i class="fab fa-js fa-10x"></i>
+        <div class="skill-item visible" title="typeScript">
+            <i  class="devicon-typescript-plain fa-9x" aria-label="typeScript"></i>
+            <span class="skill-name">TypeScript</span>
         </div>
 
-        <div title="REACT.js" class="visible">
-            <i class="fab fa-react fa-10x"></i>
+        <div class="skill-item visible" title="Next.js">
+            <i class="devicon-nextjs-original-wordmark fa-10x" aria-label="Next.js"></i>
+            <span class="skill-name">Next.js</span>
         </div>
 
-        <div title="NEXT.JS" class="visible">
-            <i class="devicon-nextjs-original-wordmark fa-10x"></i>
+        <div class="skill-item visible" title="Redux">
+            <i class="devicon-redux-original colored fa-10x" aria-label="Redux"></i>
+            <span class="skill-name">Redux</span>
         </div>
 
-
-        <div title="REDUX" class="visible">
-            <i class="devicon-redux-original colored fa-10x"></i>
+        <div class="skill-item visible" title="Node.js">
+            <i class="fab fa-node fa-10x" aria-label="Node.js"></i>
+            <span class="skill-name">Node.js</span>
         </div>
 
-        <div title="NODE.js " class="visible">
-            <i class="fab fa-node  fa-10x"></i>
+        <div class="skill-item visible" title="Express.js">
+            <i class="devicon-express-original colored fa-10x" aria-label="Express.js"></i>
+            <span class="skill-name">Express.js</span>
         </div>
 
-        <div title="EXPRESS.js " class="visible">
-            <i class="devicon-express-original colored fa-10x"></i>
-
+        <div class="skill-item visible" title="MongoDB">
+            <i class="devicon-mongodb-plain-wordmark fa-10x" aria-label="MongoDB"></i>
+            <span class="skill-name">MongoDB</span>
         </div>
 
-        <div title="mongo DB" class="visible">
-            <i class="devicon-mongodb-plain-wordmark fa-10x"></i>
+        <div class="skill-item visible" title="postgresql">
+            <i class="devicon-postgresql-plain fa-10x" aria-label="postgresql"></i>
+            <span class="skill-name">postgresql</span>
         </div>
 
-        <div title="Firebase" class="visible">
-            <i class="devicon-firebase-plain-wordmark fa-10x"></i>
+        <div class="skill-item visible" title="docker">
+            <i class="devicon-docker-plain fa-10x" aria-label="docker"></i>
+            <span class="skill-name">docker</span>
         </div>
 
-
-        <div title="GITHUB" class="visible">
-            <i class="fab fa-github fa-10x"></i>
+        <div class="skill-item visible" title="Figma">
+            <i class="fab fa-figma fa-10x" aria-label="Figma"></i>
+            <span class="skill-name">Figma</span>
         </div>
 
-        <div title="GIT" class="visible">
-            <i class="fab fa-git-alt fa-10x"></i>
+        <div class="skill-item visible" title="Git">
+            <i class="fab fa-git-alt fa-10x" aria-label="Git"></i>
+            <span class="skill-name">Git</span>
+        </div>
+
+        <div class="skill-item visible" title="GitHub">
+            <i class="fab fa-github fa-10x" aria-label="GitHub"></i>
+            <span class="skill-name">GitHub</span>
         </div>
 
     </div>
@@ -219,7 +250,7 @@
             <div class="content">
                 <h3>Bachelor of Computer Science Engineering</h3>
                 <p>Gandhi Institute of Engineering and Technology University , Gunupur | Odisha</p>
-                <h4>2020-2024 | Pursuing</h4>
+                <h4>2020-2024 | Completed</h4>
             </div>
         </div>
 
@@ -367,7 +398,7 @@
 <!-- work project section ends -->
 
 <!-- experience section starts -->
-<!-- <section class="experience" id="experience">
+<section class="experience" id="experience">
 
     <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
 
@@ -376,11 +407,11 @@
         <div class="container left">
             <div class="content">
                 <div class="tag">
-                    <h2>Mapstreak Flyseas</h2>
+                    <h2>Si6 Associates, Bangalore</h2>
                 </div>
                 <div class="desc">
-                    <h3>Web Developer | Internship</h3>
-                    <p>June 2021 - Present</p>
+                    <h3>MERN Stack Developer | Full time</h3>
+                    <p>Jun 2024 - Dec 2025</p>
                 </div>
             </div>
         </div>
@@ -388,16 +419,16 @@
         <div class="container right">
             <div class="content">
                 <div class="tag">
-                    <h2>The Spark Foundation</h2>
+                    <h2> Bigbooster Technology</h2>
                 </div>
                 <div class="desc">
-                    <h3>Website Developer | Internship</h3>
-                    <p>May 2021 - June 2021</p>
+                    <h3>Frontend Developer | Internship</h3>
+                    <p>Jan 2023 - March 2023</p>
                 </div>
             </div>
         </div>
 
-        <div class="container left">
+        <!-- <div class="container left">
             <div class="content">
                 <div class="tag">
                     <h2>The Spark Foundation</h2>
@@ -431,7 +462,7 @@
                     <p>March 2021 - April 2021</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <div class="morebtn">
@@ -442,8 +473,8 @@
 
     </div>
 
-</section> -->
-<!-- experience section ends -->
+</section> 
+
 
 <!-- contact section starts -->
 
@@ -579,6 +610,21 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assests/js/script.js"></script>
+
+<!-- Service Worker Registration -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then((registration) => {
+        console.log('SW registered: ', registration);
+      })
+      .catch((registrationError) => {
+        console.log('SW registration failed: ', registrationError);
+      });
+  });
+}
+</script>
 
 </body>
 
